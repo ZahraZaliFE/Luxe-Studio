@@ -8,7 +8,7 @@ The project focuses on an elegant layout, soft beige tones, and a calm, modern u
 ## 🔗 Online Demo
 
 View the live demo here:  
-https://zahrazalife.github.io/LuxeStudio/
+https://zahrazalife.github.io/Luxe-Studio/
 
 ---
 
