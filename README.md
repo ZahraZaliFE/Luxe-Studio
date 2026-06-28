@@ -38,7 +38,7 @@ so I created a clean and minimal layout without complex components.
 ## 📸 Sample Images
 
 <p align="center">
-  <img src="pictures-site/Screenshot_full.jpeg" width="500" alt="full-screenshot">
+  <img src="pictures-site/Screenshot_full.jpeg"  alt="full-screenshot">
 </p>
 
 
