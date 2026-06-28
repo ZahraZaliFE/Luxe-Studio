@@ -1,0 +1,188 @@
+/* custom styles – separate from Bootstrap, but we keep them here for brevity */
+:root {
+  --salon-primary: #b78a6b;
+  --salon-light: #faf6f1;
+}
+
+body {
+  background-color: var(--salon-light);
+  font-family:
+    "Segoe UI",
+    Roboto,
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+/* navbar brand & custom tweaks */
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #3e2c1b !important;
+}
+
+.navbar-brand i {
+  color: var(--salon-primary);
+  margin-right: 6px;
+}
+
+.nav-link {
+  color: #3e2c1b !important;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--salon-primary) !important;
+}
+
+.btn-salon {
+  background-color: var(--salon-primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.8rem;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.25s;
+}
+
+.btn-salon:hover {
+  background-color: #9f7357;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* hero / card section */
+.hero-section {
+  padding: 2.5rem 0 1rem;
+}
+
+.card-salon {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+  height: 100%;
+}
+
+.card-salon:hover {
+  transform: translateY(-4px);
+}
+
+.card-salon img {
+  border-radius: 30px 30px 0 0;
+  object-fit: cover;
+  height: 280px;
+  width: 100%;
+}
+
+.card-salon .card-body {
+  padding: 1.5rem 1.2rem;
+}
+
+.card-salon .card-title {
+  color: #2d1f12;
+  font-weight: 600;
+}
+
+.card-salon .card-text {
+  color: #5a4a3a;
+  font-size: 0.95rem;
+}
+
+.price-tag {
+  color: var(--salon-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* make sure all content is centered when zoom-out (negative zoom) */
+.container,
+.container-fluid {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* extra centering for navbar and footer layout only */
+.navbar .container,
+.footer .container {
+  justify-content: center;
+}
+
+/* footer */
+.footer {
+  background-color: #f0e8e0;
+  padding: 2.5rem 0 1.5rem;
+  margin-top: 3rem;
+  border-radius: 40px 40px 0 0;
+}
+
+.footer a {
+  color: #3e2c1b;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--salon-primary);
+}
+
+/* hamburger icon color */
+.navbar-toggler {
+  border: none;
+  padding: 0.4rem 0.6rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  font-size: 2rem;
+  color: #3e2c1b;
+}
+
+/* when zoomed out or on large screens, keep everything centered */
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+}
+
+/* small screens: hamburger visible, and nav links centered */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.3rem 0;
+  }
+
+  .btn-salon {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+/* extra: very small devices */
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .card-salon img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .card-salon img {
+    height: 240px;
+  }
+}
